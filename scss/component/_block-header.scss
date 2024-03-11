@@ -1,0 +1,19 @@
+@use '../abstract' as *; 
+
+
+.block_header {
+    padding: 1rem 0;
+    margin-bottom: 3rem;
+    @include flex(space-between, center);
+    border-top: 1px solid $clr-dark;
+    border-bottom: 1px solid $clr-dark;
+    h2 {
+        margin-bottom: 0;
+    }
+    a {
+        opacity: 0.5;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
